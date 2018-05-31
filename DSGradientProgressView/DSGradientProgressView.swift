@@ -168,6 +168,9 @@ public class DSGradientProgressView: UIView, CAAnimationDelegate {
         }
         else {
             self.isHidden = true
+            if numberOfOperations > 0 {
+                wait()
+            }
         }
     }
     
